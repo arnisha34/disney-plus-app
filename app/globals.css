@@ -4,4 +4,77 @@
 
 :root {
   --page-background: #040714;
+  --home-background: rgb(26, 29, 41);
 }
+
+body{
+  background: var(--home-background);
+}
+
+.wrapper{
+  padding: 0 calc(3.5vw + 24px)
+}
+/* global css */
+
+.mainCategoryBG{
+  background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+  border-radius: 8px;
+  margin: 20px 10px 0;
+}
+
+.whiteBorder:hover{
+  border: 4px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow:visible;
+}
+
+.boxShadow{
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, 
+              rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+}
+
+/* navbar */
+.navbar{
+  font-size: 13px;
+  letter-spacing: 1.42px
+}
+
+/* slick slider overrides */
+.slick-initialized .slick-slide{
+  padding: 0 10px;
+}
+
+.slick-slider .slick-prev{
+  top: 22%;
+  left: 25px;
+  transform: translate(-22%);
+  z-index: 10;
+}
+
+.slick-slider .slick-next{
+  top: 22%;
+  right: 20px;
+  transform: translate(-22%);
+}
+
+.slick-dots{
+  bottom: 30px !important;
+  text-align: right !important;
+}
+
+/* .slick-prev:before{
+    content: '';
+    background: url('data:image/svg+xml,<svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg>') no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.slick-next:before{
+    content: '';
+    background: url('data:image/svg+xml,<svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg>') no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+} */
