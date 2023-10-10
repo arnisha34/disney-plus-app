@@ -1,6 +1,9 @@
-import Image from 'next/image'
 import HomeSlider from './components/homeSlider'
-import { CollectionBox } from './collectionBox'
+import { MainCategories } from './mainCategories'
+import { CollectionBox } from './components/collections/CollectionBox'
+
+import { store } from '../app/store'
+import { provider } from 'react-redux'
 
 // import { doc, getDoc } from "firebase/firestore";
 // import { db } from './firebaseConfig'
@@ -18,8 +21,13 @@ import { CollectionBox } from './collectionBox'
 export default function Home() {
   return (
     <main className='text-white'>
-      <HomeSlider />
-      <CollectionBox />
+      <header>
+        <HomeSlider />
+      </header>
+      <section className='wrapper'>
+          <MainCategories />
+        <CollectionBox />
+      </section>
     </main>
   )
 }

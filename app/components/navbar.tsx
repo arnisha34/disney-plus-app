@@ -44,18 +44,20 @@ export default function Navbar() {
   return (
     <nav className="navbar flex items-center mx-9 my-3 text-white">
       <div className='logo mr-12'>
-        <Image 
-          src="https://firebasestorage.googleapis.com/v0/b/disney-61118.appspot.com/o/disney%2Fdisney-nav-logo.svg?alt=media&token=8138399b-2e20-4873-996d-bc50ca64b1b8"
-          alt="Disney logo"
-          width={79}
-          height={48}
-          priority
-        />
+        <Link href="/">
+           <Image 
+            src="https://firebasestorage.googleapis.com/v0/b/disney-61118.appspot.com/o/disney%2Fdisney-nav-logo.svg?alt=media&token=8138399b-2e20-4873-996d-bc50ca64b1b8"
+            alt="Disney logo"
+            width={79}
+            height={48}
+            priority
+          />
+        </Link>
       </div>
       <div className='links flex flex-1 uppercase'>
         {navLinks.map(link =>{
           return (
-            <Link key={link.text} href={link.url} className='flex mr-4'><span className='mx-2 self-center'>{link.icon}</span><p>{link.text}</p></Link>
+            <Link key={link.text} href={link.url} className='flex mr-10'><span className='mx-2 self-center'>{link.icon}</span><p>{link.text}</p></Link>
           )
         })}
       </div>
